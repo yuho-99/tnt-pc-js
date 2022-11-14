@@ -1,0 +1,22 @@
+/* 清除浮动 */
+.clearfix {
+  overflow: hidden;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+/* 设置版心 */
+.center {
+  margin: 0 auto;
+  width: 1200px;
+}
+html{
+  overflow-y: scroll;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}

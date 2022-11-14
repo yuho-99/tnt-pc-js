@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNT</title>
+  <!-- 引入css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@1.1.1/font/qweather-icons.css">
+</head>
+
+<body>
+  <header class="header" id="headerBar">
+    <div class="header-box">
+      <!-- 导航条位置，左侧logo右侧导航 -->
+      <div class="nav-left">
+        <h1 class="logo-box">
+          <a href="#">TNT</a>
+        </h1>
+      </div>
+      <div class="nav-right">
+        <!-- 导航条内容 -->
+        <ul class="navbar">
+          <!-- 给一个导航条设置active 代表当前导航条被选中-->
+          <li id="homeContent">
+            <a href="#/">
+              <span>首页</span>
+            </a>
+          </li>
+          <li id="navContent">
+            <a href="#/nav">
+              <span>导航</span>
+            </a>
+          </li>
+          <li id="manualContent">
+            <a href="#/manual">
+              <span>手册</span>
+            </a>
+          </li>
+          <li id="itContent">
+            <a href="#/it-tech">
+              <span>IT技术</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main-box center" id="mainbox">
+    <!-- 设置首页相关内容展示 -->
+    <div>
+      <div id="mainHome" class="nav-box"></div>
+    </div>
+    <!-- 设置导航相关内容展示 -->
+    <div>
+      <ul id="mainNav" class="nav-box"></ul>
+    </div>
+    <!-- 设置手册相关内容展示 -->
+    <div>
+      <ul id="mainManual" class="nav-box"></ul>
+    </div>
+    <!-- 设置it技术相关内容展示 -->
+    <div>
+      <div class="aside">
+        <ul id="asideTech" class="aside-box"></ul>
+      </div>
+      <div class="main">
+        <ul id="mainTech" class="main-c"></ul>
+      </div>
+    </div>
+  </main>
+  <script src="js/requirest.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>

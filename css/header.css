@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+.header-box {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  /* background-color: pink; */
+  line-height: 50px;
+  /* border-bottom: 1px solid #f0f0f0; */
+}
+/* 左侧 */
+.header-box .nav-left {
+  float: left;
+}
+.header-box .nav-left .logo-box a {
+  font-size: 40px;
+  color: #ff2a00;
+  font-weight: 900;
+}
+.header-box .nav-right {
+  float: right;
+}
+.header-box .nav-right .navbar li {
+  float: left;
+  margin-right: 20px;
+}
+.header-box .nav-right .navbar li:hover {
+  font-size: 30px;
+  transition: all .8s;
+}
+/* 点击的时候添加 active 类名 添加底部边框 字体颜色改变 */
+.header-box .nav-right .active span {
+  color: #ff2a00;
+  border-bottom: 1px solid ;
+}
